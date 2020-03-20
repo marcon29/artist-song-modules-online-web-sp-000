@@ -28,7 +28,7 @@ class Song
   end
 
 # each song can lowercase a string and change all spaces to hyphens
-  def to_param
-    name.downcase.gsub(' ', '-')
-  end
+#  def to_param
+#    name.downcase.gsub(' ', '-')
+#  end
 end
