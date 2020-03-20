@@ -8,6 +8,7 @@ class Artist
       # (.find_by_name) can find a particular artist
   include Paramable
       # (.to_param) makes URL out of string
+
   attr_accessor :name
   attr_reader :songs
 
