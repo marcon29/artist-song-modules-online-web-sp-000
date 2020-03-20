@@ -5,6 +5,7 @@ class Song
   include Memorable::InstanceMethods
       # (.reset_all) can delete all songs
       # (.count) can return total number of songs
+      # (#initialize)
   extend Findable
       # (.find_by_name) can find a particular song
   include Paramable
