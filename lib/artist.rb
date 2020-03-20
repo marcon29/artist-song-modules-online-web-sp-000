@@ -2,12 +2,12 @@ require 'pry'
 
 class Artist
   extend Memorable
-      # (.reset_all) can delete all artists 
+      # (.reset_all) can delete all artists
       # (.count) can return total number of artists
   extend Findable
       # (.find_by_name) can find a particular artist
   include Paramable
-      # (.to_param) each artist can lowercase a string and change all spaces to hyphens
+      # (.to_param) makes URL out of string
   attr_accessor :name
   attr_reader :songs
 
