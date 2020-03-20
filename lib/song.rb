@@ -2,8 +2,9 @@ require 'pry'
 
 class Song
   extend Memorable
-  # can delete all songs (.reset_all)
-  # can return total number of songs (.count)
+      # can delete all songs (.reset_all)
+      # can return total number of songs (.count)
+  extend Findable
 
   attr_accessor :name
   attr_reader :artist
