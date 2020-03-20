@@ -4,7 +4,7 @@ module Memorable
     def reset_all
       all.clear
     end
-    
+
     # can return total number of songs
     def count
       all.count
@@ -17,7 +17,7 @@ module Memorable
       # code for artist class @songs = [] ???
     end
 
-    
+
   end
-  
+
 end
