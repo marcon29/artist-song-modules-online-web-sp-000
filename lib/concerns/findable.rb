@@ -4,9 +4,9 @@ module Findable
 
 
   # can find a particular artist
-  #  def self.find_by_name(name)
-  #    @@artists.detect{|a| a.name == name}
-  #  end
+    def find_by_name(name)
+      all.detect{|a| a.name == name}
+    end
 
   # can find a particular song
   #  def self.find_by_name(name)
