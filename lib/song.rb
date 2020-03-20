@@ -1,7 +1,8 @@
 require 'pry'
 
 class Song
-  extend Memorable
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
       # (.reset_all) can delete all songs
       # (.count) can return total number of songs
   extend Findable
