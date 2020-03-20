@@ -5,7 +5,7 @@ class Song
       # can delete all songs (.reset_all)
       # can return total number of songs (.count)
   extend Findable
-      # can find a particular artist
+      # can find a particular song (find_by_name)
 
   attr_accessor :name
   attr_reader :artist
