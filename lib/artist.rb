@@ -2,7 +2,7 @@ require 'pry'
 
 class Artist
   extend Memorable
-      # (.reset_all) can delete all artists
+      # (.reset_all) can delete all artists 
       # (.count) can return total number of artists
   extend Findable
       # (.find_by_name) can find a particular artist
