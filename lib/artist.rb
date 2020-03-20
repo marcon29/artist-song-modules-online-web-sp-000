@@ -7,7 +7,7 @@ class Artist
   extend Findable
       # can find a particular artist (find_by_name)
   include Paramable
-  
+
   attr_accessor :name
   attr_reader :songs
 
