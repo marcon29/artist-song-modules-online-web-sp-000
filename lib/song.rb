@@ -7,7 +7,7 @@ class Song
   extend Findable
       # (.find_by_name) can find a particular song
   include Paramable
-      # (.to_param) each song can lowercase a string and change all spaces to hyphens      # each song can lowercase a string and change all spaces to hyphens
+      # (.to_param) makes URL out of string
 
   attr_accessor :name
   attr_reader :artist
