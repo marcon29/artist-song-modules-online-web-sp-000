@@ -10,22 +10,18 @@ class Artist
   attr_reader :songs
 
 # tracks all artists
-  @@artists = []
+#  @@artists = []
 
   def initialize
-    @@artists << self
+    @@all << self
+#    @@artists << self
     @songs = []
   end
 
-# can find a particular artist
-#  def self.find_by_name(name)
-#    @@artists.detect{|a| a.name == name}
-#  end
-
 # can return all artists
-  def self.all
-    @@artists
-  end
+#  def self.all
+#    @@artists
+#  end
 
 # artist instance can add itself as artist to an individual song and track it
   def add_song(song)

@@ -2,7 +2,7 @@ module Findable
 
   # tracks all songs
     all = []
-    
+
   # can return all songs
     def all_instances
       all
