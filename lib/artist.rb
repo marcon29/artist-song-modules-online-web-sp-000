@@ -22,7 +22,7 @@ class Artist
     @@artists
   end
 
-# deletes all artists
+# can delete all artists
   def self.reset_all
     self.all.clear
   end
@@ -43,6 +43,7 @@ class Artist
     songs.each { |song| add_song(song) }
   end
 
+# each artist can lowercase a string and change all spaces to hyphens
   def to_param
     name.downcase.gsub(' ', '-')
   end
