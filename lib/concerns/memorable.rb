@@ -16,8 +16,5 @@ module Memorable
       self.class.all << self
       # code for artist class @songs = [] ???
     end
-
-
   end
-
 end
