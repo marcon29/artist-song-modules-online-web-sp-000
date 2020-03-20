@@ -1,13 +1,23 @@
 module Memorable
-
-  # can delete all songs
-  def reset_all
-    all.clear
+  module ClassMethods
+    # can delete all songs
+    def reset_all
+      all.clear
+    end
+    
+    # can return total number of songs
+    def count
+      all.count
+    end
   end
 
-  # can return total number of songs
-  def count
-    all.count
-  end
+  module ClassMethods
+    def initialize
+      self.class.all << self
+      # code for artist class @songs = [] ???
+    end
 
+    
+  end
+  
 end
