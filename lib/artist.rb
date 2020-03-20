@@ -6,7 +6,7 @@ class Artist
       # can return total number of songs (.count)
   extend Findable
       # can find a particular artist
-      
+
   attr_accessor :name
   attr_reader :songs
 
