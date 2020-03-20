@@ -2,7 +2,7 @@ require 'pry'
 
 class Song
   extend Memorable
-      # (.reset_all) can delete all songs 
+      # (.reset_all) can delete all songs
       # (.count) can return total number of songs
   extend Findable
       # (.find_by_name) can find a particular song

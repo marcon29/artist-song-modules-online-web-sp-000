@@ -2,12 +2,12 @@ require 'pry'
 
 class Artist
   extend Memorable
-      # can delete all songs (.reset_all)
-      # can return total number of songs (.count)
+      # (.reset_all) can delete all artists
+      # (.count) can return total number of artists
   extend Findable
-      # can find a particular artist (find_by_name)
+      # (.find_by_name) can find a particular artist
   include Paramable
-
+      # (.to_param) each artist can lowercase a string and change all spaces to hyphens
   attr_accessor :name
   attr_reader :songs
 
@@ -34,9 +34,4 @@ class Artist
   def add_songs(songs)
     songs.each { |song| add_song(song) }
   end
-
-# each artist can lowercase a string and change all spaces to hyphens
-#  def to_param
-#    name.downcase.gsub(' ', '-')
-#  end
 end
