@@ -16,9 +16,10 @@ class Artist
   @@artists = []
 
   def initialize
-    self.class.all << self
-#    @@artists << self
+    super
     @songs = []
+#    self.class.all << self
+#    @@artists << self
   end
 
 # can return all artists
