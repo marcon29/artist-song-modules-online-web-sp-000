@@ -1,4 +1,4 @@
-module memorable
+module Memorable
 
 
 end
