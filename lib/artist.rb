@@ -17,9 +17,9 @@ class Artist
   end
 
 # can find a particular artist
-  def self.find_by_name(name)
-    @@artists.detect{|a| a.name == name}
-  end
+#  def self.find_by_name(name)
+#    @@artists.detect{|a| a.name == name}
+#  end
 
 # can return all artists
   def self.all

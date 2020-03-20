@@ -16,9 +16,9 @@ class Song
   end
 
 # can find a particular song
-  def self.find_by_name(name)
-    @@songs.detect{|a| a.name == name}
-  end
+#  def self.find_by_name(name)
+#    @@songs.detect{|a| a.name == name}
+#  end
 
 # can return all songs
   def self.all
