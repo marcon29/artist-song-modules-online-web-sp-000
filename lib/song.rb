@@ -9,10 +9,11 @@ class Song
   attr_reader :artist
 
 # tracks all songs
-  @@songs = []
+#  @@songs = []
 
   def initialize
-    @@songs << self
+    @@all << self
+#    @@songs << self
   end
 
 # can find a particular song
@@ -21,9 +22,9 @@ class Song
 #  end
 
 # can return all songs
-  def self.all
-    @@songs
-  end
+#  def self.all
+#    @@songs
+#  end
 
 # can assign  an artist instance to an individual song
   def artist=(artist)
