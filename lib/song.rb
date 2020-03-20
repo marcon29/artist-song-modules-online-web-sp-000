@@ -1,5 +1,3 @@
-require 'pry'
-
 class Song
   extend Memorable::ClassMethods
   include Memorable::InstanceMethods
