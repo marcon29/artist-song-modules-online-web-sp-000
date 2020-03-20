@@ -23,14 +23,14 @@ class Artist
   end
 
 # can delete all artists
-  def self.reset_all
-    self.all.clear
-  end
+#  def self.reset_all
+#    self.all.clear
+#  end
 
 # can return total number of artists
-  def self.count
-    self.all.count
-  end
+#  def self.count
+#    self.all.count
+#  end
 
 # artist instance can add itself as artist to an individual song and track it
   def add_song(song)
