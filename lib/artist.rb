@@ -5,23 +5,23 @@ class Artist
       # can delete all songs (.reset_all)
       # can return total number of songs (.count)
   extend Findable
-
+      # can find a particular artist
+      
   attr_accessor :name
   attr_reader :songs
 
 # tracks all artists
-#  @@artists = []
+  @@artists = []
 
   def initialize
-    @@all << self
-#    @@artists << self
+    @@artists << self
     @songs = []
   end
 
 # can return all artists
-#  def self.all
-#    @@artists
-#  end
+  def self.all
+    @@artists
+  end
 
 # artist instance can add itself as artist to an individual song and track it
   def add_song(song)
