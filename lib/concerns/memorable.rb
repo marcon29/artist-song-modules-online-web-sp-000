@@ -11,7 +11,7 @@ module Memorable
     end
   end
 
-  module ClassMethods
+  module InstanceMethods
     def initialize
       self.class.all << self
       # code for artist class @songs = [] ???
