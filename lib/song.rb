@@ -17,16 +17,12 @@ class Song
 # tracks all songs
   @@songs = []
 
-#  def initialize
-#    self.class.all << self
-#  end
-
 # can return all songs
   def self.all
     @@songs
   end
 
-# can assign  an artist instance to an individual song
+# can assign an artist instance to an individual song
   def artist=(artist)
     @artist = artist
   end
