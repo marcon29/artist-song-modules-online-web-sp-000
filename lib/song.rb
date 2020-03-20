@@ -2,6 +2,8 @@ require 'pry'
 
 class Song
   extend Memorable
+  # can delete all songs (.reset_all)
+  # can return total number of songs (.count)
 
   attr_accessor :name
   attr_reader :artist
@@ -22,16 +24,6 @@ class Song
   def self.all
     @@songs
   end
-
-# can delete all songs
-#  def self.reset_all
-#    self.all.clear
-#  end
-
-# can return total number of songs
-#  def self.count
-#    self.all.count
-#  end
 
 # can assign  an artist instance to an individual song
   def artist=(artist)
