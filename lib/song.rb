@@ -15,10 +15,9 @@ class Song
 # tracks all songs
   @@songs = []
 
-  def initialize
-    self.class.all << self
-#    @@songs << self
-  end
+#  def initialize
+#    self.class.all << self
+#  end
 
 # can return all songs
   def self.all
