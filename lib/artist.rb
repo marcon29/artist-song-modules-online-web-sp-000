@@ -1,9 +1,11 @@
 require 'pry'
 
 class Artist
-  extend Memorable
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
       # (.reset_all) can delete all artists
       # (.count) can return total number of artists
+      # (#initialize - modified below)
   extend Findable
       # (.find_by_name) can find a particular artist
   include Paramable
