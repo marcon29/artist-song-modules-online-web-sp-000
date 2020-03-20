@@ -1,36 +1,27 @@
-require 'pry'
-
 class Song
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
+      # (.reset_all) can delete all songs
+      # (.count) can return total number of songs
+      # (#initialize)
+  extend Findable
+      # (.find_by_name) can find a particular song
+  include Paramable
+      # (.to_param) makes URL out of string
+
   attr_accessor :name
   attr_reader :artist
 
+# tracks all songs
   @@songs = []
 
-  def initialize
-    @@songs << self
-  end
-
-  def self.find_by_name(name)
-    @@songs.detect{|a| a.name == name}
-  end
-
+# can return all songs
   def self.all
     @@songs
   end
 
-  def self.reset_all
-    self.all.clear
-  end
-
-  def self.count
-    self.all.count
-  end
-
+# can assign an artist instance to an individual song
   def artist=(artist)
     @artist = artist
-  end
-
-  def to_param
-    name.downcase.gsub(' ', '-')
   end
 end
